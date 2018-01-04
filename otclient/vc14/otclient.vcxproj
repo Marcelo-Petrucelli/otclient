@@ -23,7 +23,7 @@
     <ProjectGuid>{17A8F78F-1FFB-4128-A3B3-59CC6C19D89A}</ProjectGuid>
     <RootNamespace>otclient</RootNamespace>
     <OTCLIENTSDKDir>..\..\otclient-sdk</OTCLIENTSDKDir>
-    <BOOST_ROOT_OTCLIENT>$(OTCLIENTSDKDir)\boost_1_63_0</BOOST_ROOT_OTCLIENT>
+    <BOOST_ROOT_OTCLIENT>$(OTCLIENTSDKDir)\..\boost_1_63_0</BOOST_ROOT_OTCLIENT>
     <LUA_DIR>$(OTCLIENTSDKDir)\LuaJIT-2.1.0\</LUA_DIR>
     <GLEW_DIR>$(OTCLIENTSDKDir)\glew-2.0.0\</GLEW_DIR>
     <LIBOGG_DIR>$(OTCLIENTSDKDir)\libogg-1.3.2\</LIBOGG_DIR>
