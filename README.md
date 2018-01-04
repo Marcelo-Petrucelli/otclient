@@ -6,14 +6,14 @@ I'm currently testing a lot of things, and finding better ways to run and compli
 
 ## Donwloads:
 
-### [Boost](https://mega.nz/#!0NRwjbpJ!jyndUNuwkfmrL7cT0Y3GmoCw7smHJNhfjr2W8VfoVj4). Coloque na pasta `boost_1_63_0`(verifique o arquivo BoostInfo)
+### [Boost](https://mega.nz/#!4IJSBDpa!THAe26QSMpMJfOv7-45W9iX-_L_bDoIsto2UvBdnibQ). Coloque na pasta `boost_1_63_0`(verifique o arquivo BoostInfo)
 ### [Data - 1090,1096,1097,1098](https://mega.nz/#!AFIknZqI!n3_7DFChwRg9QNMYsmMRwDDWRmPwS1HOztfB0dE55rU)
 
 ## Editions:
 
 ### OTClient:
-##### I moved the settings.props (which relied on a System Variable) to be part of `otclient\vc14\otclient.vcxproj`.
-##### Removed the criptography from any communications, since we'll be working on it later.
+I'v moved the settings.props (which relied on a System Variable) to be part of `otclient\vc14\otclient.vcxproj`.
+Removed the criptography from any communications, since we'll be working on it later.
 
 ### TFS:
-##### The same was done to TFS (more soon).
+The same was done to TFS, things in settings.props were moved to `forgotten\vc14\theforgottenserver.vcxproj` and are not dependent of any System Variables.
