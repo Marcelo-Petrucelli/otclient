@@ -6,6 +6,7 @@ Makefile
 /otclient
 /*.h
 /*.cxx
+*.rar
 *.o
 *.gch
 *.a
