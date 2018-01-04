@@ -1,4 +1,4 @@
-### What is this, that I'm looking at?
+### What am I looking at?
 
 This repo is a fork from [edubart/otclient](https://github.com/edubart/otclient) where I added also a fork of [otland/forgottenserver (TFS 1.X+)](https://github.com/otland/forgottenserver). Actually I joined both repositories. The idea is to study and chenge some simple things to make tests in a project (it's named COTS, soon I'll put a link here).
 
