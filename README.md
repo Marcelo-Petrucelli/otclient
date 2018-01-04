@@ -7,7 +7,7 @@ I'm currently testing a lot of things, and finding better ways to run and compli
 ## Donwloads:
 
 ### [Boost](https://mega.nz/#!0NRwjbpJ!jyndUNuwkfmrL7cT0Y3GmoCw7smHJNhfjr2W8VfoVj4). Coloque na pasta `otclient-sdk\boost_1_63_0`(verifique o arquivo BoostInfo)
-### [Dl - 1090,1096,1097,1098](https://mega.nz/#!AFIknZqI!n3_7DFChwRg9QNMYsmMRwDDWRmPwS1HOztfB0dE55rU)
+### [Data - 1090,1096,1097,1098](https://mega.nz/#!AFIknZqI!n3_7DFChwRg9QNMYsmMRwDDWRmPwS1HOztfB0dE55rU)
 
 ## Editions:
 
