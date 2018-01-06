@@ -110,10 +110,10 @@ void OutputMessage::writeChecksum()
 
 void OutputMessage::writeMessageSize()
 {
-    assert(m_headerPos - 2 >= 0);
-    m_headerPos -= 2;
-    stdext::writeULE16(m_buffer + m_headerPos, m_messageSize);
-    m_messageSize += 2;
+    assert(m_headerPos - 4 >= 0);
+    m_headerPos -= 4;
+    stdext::writeULE32(m_buffer + m_headerPos, m_messageSize);
+    m_messageSize += 4;
 }
 
 bool OutputMessage::canWrite(int bytes)

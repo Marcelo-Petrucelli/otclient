@@ -52,20 +52,26 @@ void ProtocolGame::sendLoginPacket(uint challengeTimestamp, uint8 challengeRando
 {
     OutputMessagePtr msg(new OutputMessage);
 
-    msg->addU8(Proto::ClientPendingGame);
-    msg->addU16(g_game.getOs());
-    msg->addU16(g_game.getProtocolVersion());
+    //msg->addU8(Proto::ClientPendingGame);
+    //msg->addU16(g_game.getOs());
+    //msg->addU16(g_game.getProtocolVersion());
 
-    if(g_game.getFeature(Otc::GameClientVersion))
+    /*if(g_game.getFeature(Otc::GameClientVersion))
         msg->addU32(g_game.getClientVersion());
 
     if(g_game.getFeature(Otc::GameContentRevision))
-        msg->addU16(g_things.getContentRevision());
+        msg->addU16(g_things.getContentRevision());*/
 
-    if(g_game.getFeature(Otc::GamePreviewState))
-        msg->addU8(0);
+    /*if(g_game.getFeature(Otc::GamePreviewState))
+        msg->addU8(0);*/
 
-    int offset = msg->getMessageSize();
+	msg->addU32(g_game.getClientVersion());
+	msg->addU32(g_game.getProtocolVersion());
+	msg->addString(m_accountName);
+	msg->addString(m_accountPassword);
+
+    //int offset = msg->getMessageSize();
+	/*
     // first RSA byte must be 0
     msg->addU8(0);
 
@@ -115,11 +121,11 @@ void ProtocolGame::sendLoginPacket(uint challengeTimestamp, uint8 challengeRando
 
     if(g_game.getFeature(Otc::GameProtocolChecksum))
         enableChecksum();
-
+	*/
     send(msg);
 
-    if(g_game.getFeature(Otc::GameLoginPacketEncryption))
-        enableXteaEncryption();
+    /*if(g_game.getFeature(Otc::GameLoginPacketEncryption))
+        enableXteaEncryption();*/
 }
 
 void ProtocolGame::sendEnterGame()
